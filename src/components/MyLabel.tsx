@@ -25,13 +25,18 @@ interface Props {
      * Font Color Picker
      */
     fontColor?: string,
+
+    /**
+     * Font Color Picker
+     */
+    backgroundColor?: string,
 }
 
 
-export const MyLabel = ({ label, size = 'normal', allCaps=false, color = 'text-primary', fontColor}: Props) => {
+export const MyLabel = ({ label, size = 'normal', allCaps = false, color = 'text-primary', fontColor, backgroundColor='transparent' }: Props) => {
     return (
-        <span className={`${size} ${color} label`} style={{color:fontColor}} >
-            { allCaps ? label.toLocaleUpperCase() : label }
+        <span className={`${size} ${color} label`} style={{ color: fontColor, backgroundColor }} >
+            {allCaps ? label.toLocaleUpperCase() : label}
         </span>
     )
 }
