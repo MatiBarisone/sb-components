@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "repository": {
-    "url": "https://TODO",
+    "url": "https://github.com/MatiBarisone/sb-components.git",
     "type": "git"
   },
   "files": [
@@ -30,7 +30,7 @@
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "engines": {
-    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+    "node": ">=12.10.0"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -41,7 +41,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_b7397bbdb3e2275",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
@@ -63,7 +64,6 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "eslint-plugin-storybook": "^0.11.1",
     "globals": "^15.12.0",
-    "np": "^10.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
